@@ -1,0 +1,36 @@
+{
+  "name": "ask",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.3",
+    "cookie-parser": "~1.4.3",
+    "csurf": "^1.10.0",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-handlebars": "^3.0.2",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "flag": "^3.0.0-1",
+    "hbs": "~4.0.1",
+    "http-errors": "~1.6.2",
+    "jquery": "^3.4.1",
+    "jquery-migrate": "^3.0.1",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.4.19",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.11",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "readmore-js": "^2.2.1",
+    "web3": "^1.0.0-beta.54"
+  }
+}

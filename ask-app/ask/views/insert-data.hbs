@@ -1,0 +1,33 @@
+<h1>Insert Flight Info</h1>
+<section class="insert-data">
+    <h3>Insert Data</h3>
+    <form action="insert-data" method="post" id = "insert-data">
+        <div class="input">
+            <label for="fromCity">fromCity</label>
+            <input type="text" id="fromCity" name="fromCity">
+        </div>
+        <div class="input">
+            <label for="toCity">toCity</label>
+            <input type="text" id="toCity" name="toCity">
+        </div>
+        <div class="input">
+            <label for="seats">seats</label>
+            <input type="text" id="seats" name="seats">
+        </div>
+        <button type="submit">INSERT</button>
+    </form>
+</section>
+<section class="get">
+    <h3>Get Data</h3>
+    <a href="/get-data">LOAD DATA</a>
+    <div>
+        {{# each items }}
+            <article class="item">
+                <div>fromCity: {{ this.fromCity }}</div>
+                <div>toCity: {{ this.toCity }}</div>
+                <div>seats: {{ this.seats }}</div>
+                <div>ID: {{ this._id }}</div>
+            </article>
+        {{/each}}
+    </div>
+</section>

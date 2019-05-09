@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request Ticket Exchange</title>
+</head>
+<body>
+<section class="request">
+    <h3>Check Availability</h3>
+    <form action="request" method="post" id = "request">
+        <div class="input">
+            <label for="fromCity">fromCity</label>
+            <input type="text" id="fromCity" name="fromCity">
+        </div>
+        <div class="input">
+            <label for="toCity">toCity</label>
+            <input type="text" id="toCity" name="toCity">
+        </div>
+        <div class="input">
+            <label for="seats">seats</label>
+            <input type="text" id="seats" name="seats">
+        </div>
+        <button type="submit" id="Request_check">Request</button>
+    </form>
+</section>
+</body>
+<script src ="/javascripts/dist/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/javascripts/dist/bootstrap1.min.js"></script>
+<script src="/javascripts/dist/web3.min.js"></script>
+<script src="/javascripts/dist/truffle-contract.js"></script>
+
+<script src="/javascripts/app.js"></script>
+</html>

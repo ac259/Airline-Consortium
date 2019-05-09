@@ -1,0 +1,51 @@
+{{!-- <<<<<<< HEAD --}}
+<h2> Exchange possible </h2>
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+
+{{!-- <section class="get">
+    <h3>Get Data</h3>
+    
+    <div>
+        <article class="item">
+            <div id="fromCityR">fromCity: {{ data.fromCity }}</div>
+            <div id="toCityR">toCity: {{data.toCity}}</div>
+            <div id="seatsR">seats: {{data.seats}}</div>
+            <button class="btn btn-info" type="button" id="Response"><a href ="#">Response</a></button>
+        </article>
+    </div>
+</section> --}}
+
+<section class="request">
+    <h3>Confirm Ticket</h3>
+    <form action="request" method="post" id = "request" >
+        <div class="input">
+            <label for="fromCity">fromCity</label>
+            <input type="text" id="fromCityR" name="fromCity" value= {{ data.fromCity }}>
+        </div>
+        <div class="input">
+            <label for="toCity">toCity</label>
+            <input type="text" id="toCityR" name="toCity" value = {{data.toCity}}>
+        </div>
+        <div class="input">
+            <label for="seats">seats</label>
+            <input type="text" id="seatsR" name="seats" value = {{data.seats}}>
+        </div>
+        <button type="submit" id="Response"><a href ="Payment">Response</a></button>
+        <button type="submit"><a href="/">Cancel</a></button>
+    </form>
+</section>
+
+</body>
+<script src ="/javascripts/dist/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/javascripts/dist/bootstrap1.min.js"></script>
+<script src="/javascripts/dist/web3.min.js"></script>
+<script src="/javascripts/dist/truffle-contract.js"></script>
+
+<script src="/javascripts/app.js"></script>
+</html>
