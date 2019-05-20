@@ -11,11 +11,12 @@ App = {
   },
 
   initWeb3: function() {
-        // Is there is an injected web3 instance?
+    
+    // Is there is an injected web3 instance?
     if (typeof web3 !== 'undefined') {
       App.web3Provider = web3.currentProvider;
     } else {
-      // If no injected web3 instance is detected, fallback to the TestRPC
+    // If no injected web3 instance is detected, fallback to the TestRPC
       App.web3Provider = new Web3.providers.HttpProvider(App.url);
     }
     web3 = new Web3(App.web3Provider);
@@ -167,14 +168,10 @@ handlePayment: function(){
             alert(" Payment failed")
         }   
     });
-    // ,{from: addr, value: 100},function(err,result){});
-// });
 },
 
 handleBalance: function(addr){
     console.log("Inside balance");
-    // var msgValue = $("#message-value").val();
-    // msgValue = parseInt(msgValue);
     var askInstance;
     App.contracts.ask.deployed().then(function(instance) {
       askInstance = instance;
